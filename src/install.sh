@@ -95,6 +95,8 @@ WantedBy=multi-user.target"
 # Create the systemd service file
 echo "$SERVICE_FILE_CONTENT" | sudo tee /etc/systemd/system/comfyui.service > /dev/null
 
+pip install lpips
+
 # Reload systemd to recognize the new service
 sudo systemctl daemon-reload
 sudo systemctl enable comfyui.service
