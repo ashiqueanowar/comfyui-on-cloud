@@ -3,7 +3,8 @@
 # make sure you are in comfyui installation folder
 mkdir -p ./models/facerestore_models/
 
-
+pip install git+git+https://github.com/facebookresearch/detectron2.git@v0.6
+pip install git+git+https://github.com/facebookresearch/detectron2.git@v0.6#subdirectory=projects/DensePose
 
 #COMFY MANAGER
 
